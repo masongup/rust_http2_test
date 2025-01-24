@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-reqwest = { version = "*", features = ["http2", "native-tls-alpn"] }
+reqwest = { version = "*", default-features = false, features = ["http2", "rustls-tls"] }
 tracing = "*"
 tracing-subscriber = { version = "*", features = ["fmt"] }
 tokio = { version = "1.43", features = ["full"] }
